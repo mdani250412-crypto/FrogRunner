@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    {
+      "package": "@heretek-ai/unity.gamedev.kit",
+      "options": {
+        "unityMcpCommand": ["cmd", "/c", "npx", "-y", "anklebreaker-unity-mcp@latest"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+name: Create GitHub Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "FrogRunner ${{ github.ref_name }}"
+          body: |
+            ## FrogRunner Test Build
+
+            ### Downloads
+            - **Android:** FrogRunner-Android.apk
+            - **Windows:** FrogRunner-Windows.zip
+
+            ### Install (Android)
+            1. Download the .apk
+            2. Allow "Install unknown apps" if prompted
+            3. Tap Install (acknowledge "Not verified" warning if shown)
+            4. Open and play
+
+            ### Install (Windows)
+            1. Download the .zip
+            2. Extract all files
+            3. Run FrogRunner.exe
+          files: |
+            Builds/FrogRunner-Android.apk
+            Builds/FrogRunner-Windows.zip
+          draft: false
+          prerelease: true

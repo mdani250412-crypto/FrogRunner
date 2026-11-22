@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrogRunner - Download for Android & Windows | frogrunner.com</title>
+  <meta name="description" content="Download FrogRunner v0.1 Test Build for Android (APK) and Windows (ZIP). Retro low-poly Frogger-style racing." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">🐸</span>
+        <span class="brand-text">frogrunner.com</span>
+      </a>
+      <nav class="nav">
+        <a href="#downloads">Downloads</a>
+        <a href="#notes">Patch Notes</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#hosting">Hosting</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="badge" data-release-tag>v0.1 Test Build</span>
+          <h1>FrogRunner</h1>
+          <p class="tagline">Race your frog through 10 escalating rounds of highways, grass banks, and river crossings. Dodge traffic, ride drifting logs, and escape the animal police.</p>
+
+          <div class="controls">
+            <div class="control-card">
+              <h3>📱 Mobile Touch</h3>
+              <ul>
+                <li><span>D-Pad</span> Move (Left/Right/Up/Down)</li>
+                <li><span>Jump</span> Hop & glide across water</li>
+                <li><span>Dash</span> Quick tumble forward</li>
+                <li><span>Crouch</span> Duck under hazards</li>
+              </ul>
+            </div>
+            <div class="control-card">
+              <h3>⌨️ Windows Keyboard</h3>
+              <ul>
+                <li><span>WASD / Arrows</span> Move</li>
+                <li><span>Space</span> Jump / Glide</li>
+                <li><span>Shift</span> Dash / Tumble</li>
+                <li><span>Ctrl / C</span> Crouch</li>
+                <li><span>Esc / P</span> Pause</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#downloads">Download Now</a>
+            <a class="btn btn-ghost" href="#notes">Patch Notes</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="pixel-frog">
+            <div class="frog-body"></div>
+            <div class="frog-eye left"></div>
+            <div class="frog-eye right"></div>
+            <div class="frog-leg"></div>
+          </div>
+          <div class="pixel-road"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="section downloads">
+      <div class="container">
+        <h2>Download FrogRunner</h2>
+        <p class="section-sub">Choose your platform. Both builds are the same <span data-release-tag>v0.1.0-test</span> release.</p>
+        <p id="releaseNotesLine" class="release-notes-line"></p>
+        <p class="unconfigured-notice" id="unconfiguredNotice" hidden>
+          ⚠️ Download URLs are not configured yet. Edit the <code>RELEASE_CONFIG</code> block at the top of <code>script.js</code> with your GitHub Releases links.
+        </p>
+        <div class="download-grid">
+          <!-- Android -->
+          <article class="download-card">
+            <div class="card-head">
+              <span class="platform-icon">🤖</span>
+              <div>
+                <h3>Android</h3>
+                <span class="version"><span data-release-tag>v0.1.0-test</span> · .APK</span>
+              </div>
+            </div>
+            <ul class="reqs">
+              <li>Android 7.0+ (API 24)</li>
+              <li>ARM64 / ARMv7</li>
+              <li>~50 MB free space</li>
+              <li>Landscape orientation</li>
+            </ul>
+            <a class="btn btn-download btn-android" href="downloads/FrogRunner-Android.apk" download data-platform="android">
+              Download for Android (.APK)
+            </a>
+            <div class="install-guide">
+              <h4>3-Step Install Guide</h4>
+              <ol>
+                <li>Tap the button above to download the <code>.apk</code> file.</li>
+                <li>If prompted, allow "Install unknown apps" for your browser/file manager.</li>
+                <li>Open the APK → tap <strong>Install</strong>. If you see "Not verified" warning, tap <strong>"I acknowledge that this app may pose risks"</strong> to enable the Install button.</li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- Windows -->
+          <article class="download-card">
+            <div class="card-head">
+              <span class="platform-icon">🪟</span>
+              <div>
+                <h3>Windows</h3>
+                <span class="version"><span data-release-tag>v0.1.0-test</span> · .ZIP</span>
+              </div>
+            </div>
+            <ul class="reqs">
+              <li>Windows 10 / 11 (64-bit)</li>
+              <li>~100 MB free space</li>
+              <li>Keyboard + mouse</li>
+              <li>DirectX 11 compatible GPU</li>
+            </ul>
+            <a class="btn btn-download btn-windows" href="downloads/FrogRunner-Windows.zip" download data-platform="windows">
+              Download for Windows (.ZIP)
+            </a>
+            <div class="install-guide">
+              <h4>3-Step Extract &amp; Run Guide</h4>
+              <ol>
+                <li>Download the ZIP file.</li>
+                <li>Right-click → <strong>Extract All</strong> to a folder (e.g. Desktop).</li>
+                <li>Open the folder and run <strong>FrogRunner.exe</strong>.</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+
+        <p class="fallback-note" id="fallbackNote" hidden>
+          ⚠️ One or more build files are not available yet. Please check back soon or contact the developer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Patch Notes -->
+    <section id="notes" class="section notes">
+      <div class="container">
+        <h2>Patch Notes / Known Test Bugs</h2>
+        <div class="notes-grid">
+          <div class="notes-card">
+            <h3>✨ What's New (v0.1)</h3>
+            <ul>
+              <li>10 escalating rounds with distinct themes.</li>
+              <li>Manual 4-way movement + jump/glide/dash/crouch.</li>
+              <li>Drifting river logs and crocodile hazards.</li>
+              <li>Animal Police pursuer with siren.</li>
+              <li>Coin + Boost Card shop between rounds.</li>
+              <li>Save slots and Closet cosmetics.</li>
+            </ul>
+          </div>
+          <div class="notes-card">
+            <h3>🐛 Known Test Bugs</h3>
+            <ul>
+              <li>LAN multiplayer round-sync is still a local scaffold.</li>
+              <li>Some props use procedural primitives (not final art).</li>
+              <li>Swipe-to-hop not yet implemented on mobile.</li>
+              <li>Vehicle horn/whoosh audio pending.</li>
+              <li>Performance on very low-end Androids may need Low preset.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multiplayer -->
+    <section id="multiplayer" class="section multiplayer">
+      <div class="container">
+        <h2>How to Play Wi-Fi / Hotspot Multiplayer</h2>
+        <div class="mp-card">
+          <ol>
+            <li><strong>Host:</strong> Open FrogRunner on one device → Main Menu → <em>Multiplayer</em> → <em>Host Room</em>.</li>
+            <li><strong>Players:</strong> On other devices (same Wi-Fi or hotspot), open the game → <em>Multiplayer</em> → <em>Join Room</em>.</li>
+            <li>Devices must be on the <strong>same network</strong> (Wi-Fi router or phone hotspot).</li>
+            <li>Enter a <strong>unique player name</strong> (duplicates are rejected).</li>
+            <li>Host starts the run; everyone races to the finish. First to finish earns the most points.</li>
+          </ol>
+          <p class="mp-note">Tip: If discovery fails, make sure no firewall blocks UDP port 47777 / TCP 47778 on the host device.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hosting -->
+    <section id="hosting" class="section hosting">
+      <div class="container">
+        <h2>Host It Yourself</h2>
+        <div class="host-grid">
+          <div class="host-card">
+            <h3>🏠 Local (same Wi-Fi)</h3>
+            <p>Run a tiny server from the <code>Website/</code> folder:</p>
+            <pre><code>cd Website
+python -m http.server 8080</code></pre>
+            <p>Then open <code>http://&lt;your-pc-ip&gt;:8080</code> on your phone (same Wi-Fi/hotspot).</p>
+          </div>
+          <div class="host-card">
+            <h3>🌐 Publish to frogrunner.com</h3>
+            <p>Free static hosting options:</p>
+            <ul>
+              <li><strong>GitHub Pages:</strong> push <code>Website/</code> to a repo → Settings → Pages → deploy from main branch.</li>
+              <li><strong>Netlify:</strong> drag-and-drop the <code>Website/</code> folder at app.netlify.com/drop.</li>
+              <li><strong>Cloudflare Pages:</strong> connect repo or upload; set build output to <code>Website/</code>.</li>
+            </ul>
+            <p>Point your custom domain <strong>frogrunner.com</strong> to the host via DNS (CNAME/A records).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 FrogRunnerDev · frogrunner.com</span>
+      <span>v0.1 Test Build</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

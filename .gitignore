@@ -1,0 +1,43 @@
+# Unity
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+
+# Build outputs (keep in repo for releases)
+Builds/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln.docstates
+
+# AnkleBreaker
+.anklebreaker/
+
+.utmp/
+Website/downloads/frogrunner_BackUpThisFolder_ButDontShipItWithYourGame/
