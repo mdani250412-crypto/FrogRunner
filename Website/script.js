@@ -6,8 +6,8 @@
 const RELEASE_CONFIG = {
   releaseTag: "v0.1.0-test",
   releaseNotes: "First test build — 10 rounds, manual controls, river logs, crocodiles, animal police, boost cards, save slots.",
-  androidApkUrl: "https://github.com/mdani250412-crypto/frogrunner/releases/download/v0.1.0-test/FrogRunner-Android.apk",
-  windowsZipUrl: "https://github.com/mdani250412-crypto/frogrunner/releases/download/v0.1.0-test/FrogRunner-Windows.zip",
+  androidApkUrl: "https://github.com/mdani250412-crypto/FrogRunner/releases/download/v0.1.0-test/FrogRunner-Android.apk",
+  windowsZipUrl: "https://github.com/mdani250412-crypto/FrogRunner/releases/download/v0.1.0-test/FrogRunner-Windows.zip",
   configured: true
 };
 
